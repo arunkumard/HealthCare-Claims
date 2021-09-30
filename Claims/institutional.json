@@ -1,0 +1,1384 @@
+{
+  "Claims": [
+    {
+      "resourceType": "Claim",
+      "id": "960150",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the Claim</div>"
+      },
+      "identifier": [
+        {
+          "system": "http://happyhospital0.com/claim0",
+          "value": "9612340"
+        }
+      ],
+      "status": "active",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ex-claimtype",
+            "code": "institutional"
+          }
+        ]
+      },
+      "subType": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ex-claimsubtype",
+              "code": "emergency"
+            }
+          ]
+        }
+      ],
+      "use": "complete",
+      "patient": {
+        "reference": "Patient/1"
+      },
+      "created": "2021-08-16",
+      "enterer": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities/HOSP1234/users",
+          "value": "UC1234"
+        }
+      },
+      "insurer": {
+        "reference": "Organization/2"
+      },
+      "organization": {
+        "reference": "Organization/1"
+      },
+      "priority": {
+        "coding": [
+          {
+            "code": "normal"
+          }
+        ]
+      },
+      "payee": {
+        "type": {
+          "coding": [
+            {
+              "code": "provider"
+            }
+          ]
+        }
+      },
+      "facility": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities",
+          "value": "HOSP1234"
+        }
+      },
+      "careTeam": [
+        {
+          "sequence": 1,
+          "provider": {
+            "reference": "Practitioner/example"
+          }
+        }
+      ],
+      "diagnosis": [
+        {
+          "sequence": 1,
+          "diagnosisCodeableConcept": {
+            "coding": [
+              {
+                "code": "654456"
+              }
+            ]
+          }
+        }
+      ],
+      "insurance": [
+        {
+          "sequence": 1,
+          "focal": true,
+          "coverage": {
+            "reference": "Coverage/9876B1"
+          }
+        }
+      ],
+      "item": [
+        {
+          "sequence": 1,
+          "careTeamLinkId": [
+            1
+          ],
+          "service": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ex-serviceproduct",
+                "code": "exam"
+              }
+            ]
+          },
+          "servicedDate": "2021-09-16",
+          "unitPrice": {
+            "value": 125,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "net": {
+            "value": 125,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "encounter": [
+            {
+              "reference": "Encounter/example"
+            }
+          ]
+        }
+      ],
+      "total": {
+        "value": 125,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      }
+    },
+    {
+      "resourceType": "Claim",
+      "id": "960151",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the Claim</div>"
+      },
+      "identifier": [
+        {
+          "system": "http://happyhospital.com/claim",
+          "value": "9612341"
+        }
+      ],
+      "status": "active",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ex-claimtype",
+            "code": "institutional"
+          }
+        ]
+      },
+      "subType": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ex-claimsubtype",
+              "code": "emergency"
+            }
+          ]
+        }
+      ],
+      "use": "complete",
+      "patient": {
+        "reference": "Patient/2"
+      },
+      "created": "2021-09-26",
+      "enterer": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities/HOSP2234/users",
+          "value": "UC2234"
+        }
+      },
+      "insurer": {
+        "reference": "Organization/2"
+      },
+      "organization": {
+        "reference": "Organization/1"
+      },
+      "priority": {
+        "coding": [
+          {
+            "code": "normal"
+          }
+        ]
+      },
+      "payee": {
+        "type": {
+          "coding": [
+            {
+              "code": "provider"
+            }
+          ]
+        }
+      },
+      "facility": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities",
+          "value": "HOSP1234"
+        }
+      },
+      "careTeam": [
+        {
+          "sequence": 1,
+          "provider": {
+            "reference": "Practitioner/example"
+          }
+        }
+      ],
+      "diagnosis": [
+        {
+          "sequence": 1,
+          "diagnosisCodeableConcept": {
+            "coding": [
+              {
+                "code": "654456"
+              }
+            ]
+          }
+        }
+      ],
+      "insurance": [
+        {
+          "sequence": 1,
+          "focal": true,
+          "coverage": {
+            "reference": "Coverage/9876B1"
+          }
+        }
+      ],
+      "item": [
+        {
+          "sequence": 1,
+          "careTeamLinkId": [
+            1
+          ],
+          "service": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ex-serviceproduct",
+                "code": "exam"
+              }
+            ]
+          },
+          "servicedDate": "2021-09-25",
+          "unitPrice": {
+            "value": 225,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "net": {
+            "value": 225,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "encounter": [
+            {
+              "reference": "Encounter/example"
+            }
+          ]
+        }
+      ],
+      "total": {
+        "value": 225,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      }
+    },
+    {
+      "resourceType": "Claim",
+      "id": "960152",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the Claim</div>"
+      },
+      "identifier": [
+        {
+          "system": "http://happyhospital.com/claim",
+          "value": "9612342"
+        }
+      ],
+      "status": "active",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ex-claimtype",
+            "code": "institutional"
+          }
+        ]
+      },
+      "subType": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ex-claimsubtype",
+              "code": "emergency"
+            }
+          ]
+        }
+      ],
+      "use": "complete",
+      "patient": {
+        "reference": "Patient/3"
+      },
+      "created": "2021-09-26",
+      "enterer": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities/HOSP3234/users",
+          "value": "UC3234"
+        }
+      },
+      "insurer": {
+        "reference": "Organization/2"
+      },
+      "organization": {
+        "reference": "Organization/1"
+      },
+      "priority": {
+        "coding": [
+          {
+            "code": "normal"
+          }
+        ]
+      },
+      "payee": {
+        "type": {
+          "coding": [
+            {
+              "code": "provider"
+            }
+          ]
+        }
+      },
+      "facility": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities",
+          "value": "HOSP1234"
+        }
+      },
+      "careTeam": [
+        {
+          "sequence": 1,
+          "provider": {
+            "reference": "Practitioner/example"
+          }
+        }
+      ],
+      "diagnosis": [
+        {
+          "sequence": 1,
+          "diagnosisCodeableConcept": {
+            "coding": [
+              {
+                "code": "654456"
+              }
+            ]
+          }
+        }
+      ],
+      "insurance": [
+        {
+          "sequence": 1,
+          "focal": true,
+          "coverage": {
+            "reference": "Coverage/9876B1"
+          }
+        }
+      ],
+      "item": [
+        {
+          "sequence": 1,
+          "careTeamLinkId": [
+            1
+          ],
+          "service": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ex-serviceproduct",
+                "code": "exam"
+              }
+            ]
+          },
+          "servicedDate": "2021-09-26",
+          "unitPrice": {
+            "value": 125,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "net": {
+            "value": 125,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "encounter": [
+            {
+              "reference": "Encounter/example"
+            }
+          ]
+        }
+      ],
+      "total": {
+        "value": 125,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      }
+    },
+    {
+      "resourceType": "Claim",
+      "id": "960153",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the Claim</div>"
+      },
+      "identifier": [
+        {
+          "system": "http://happyhospital1.com/claim1",
+          "value": "9612343"
+        }
+      ],
+      "status": "active",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ex-claimtype",
+            "code": "institutional"
+          }
+        ]
+      },
+      "subType": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ex-claimsubtype",
+              "code": "emergency"
+            }
+          ]
+        }
+      ],
+      "use": "complete",
+      "patient": {
+        "reference": "Patient/4"
+      },
+      "created": "2021-09-24",
+      "enterer": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities/HOSP1234/users",
+          "value": "UC4234"
+        }
+      },
+      "insurer": {
+        "reference": "Organization/2"
+      },
+      "organization": {
+        "reference": "Organization/1"
+      },
+      "priority": {
+        "coding": [
+          {
+            "code": "normal"
+          }
+        ]
+      },
+      "payee": {
+        "type": {
+          "coding": [
+            {
+              "code": "provider"
+            }
+          ]
+        }
+      },
+      "facility": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities",
+          "value": "HOSP1234"
+        }
+      },
+      "careTeam": [
+        {
+          "sequence": 1,
+          "provider": {
+            "reference": "Practitioner/example"
+          }
+        }
+      ],
+      "diagnosis": [
+        {
+          "sequence": 1,
+          "diagnosisCodeableConcept": {
+            "coding": [
+              {
+                "code": "654456"
+              }
+            ]
+          }
+        }
+      ],
+      "insurance": [
+        {
+          "sequence": 1,
+          "focal": true,
+          "coverage": {
+            "reference": "Coverage/9876B1"
+          }
+        }
+      ],
+      "item": [
+        {
+          "sequence": 1,
+          "careTeamLinkId": [
+            1
+          ],
+          "service": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ex-serviceproduct",
+                "code": "exam"
+              }
+            ]
+          },
+          "servicedDate": "2021-09-24",
+          "unitPrice": {
+            "value": 325,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "net": {
+            "value": 325,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "encounter": [
+            {
+              "reference": "Encounter/example"
+            }
+          ]
+        }
+      ],
+      "total": {
+        "value": 325,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      }
+    },
+    {
+      "resourceType": "Claim",
+      "id": "960154",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the Claim</div>"
+      },
+      "identifier": [
+        {
+          "system": "http://happyhospital.com/claim",
+          "value": "9612344"
+        }
+      ],
+      "status": "active",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ex-claimtype",
+            "code": "institutional"
+          }
+        ]
+      },
+      "subType": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ex-claimsubtype",
+              "code": "emergency"
+            }
+          ]
+        }
+      ],
+      "use": "complete",
+      "patient": {
+        "reference": "Patient/5"
+      },
+      "created": "2021-09-26",
+      "enterer": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities/HOSP5234/users",
+          "value": "UC5234"
+        }
+      },
+      "insurer": {
+        "reference": "Organization/2"
+      },
+      "organization": {
+        "reference": "Organization/1"
+      },
+      "priority": {
+        "coding": [
+          {
+            "code": "normal"
+          }
+        ]
+      },
+      "payee": {
+        "type": {
+          "coding": [
+            {
+              "code": "provider"
+            }
+          ]
+        }
+      },
+      "facility": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities",
+          "value": "HOSP1234"
+        }
+      },
+      "careTeam": [
+        {
+          "sequence": 1,
+          "provider": {
+            "reference": "Practitioner/example"
+          }
+        }
+      ],
+      "diagnosis": [
+        {
+          "sequence": 1,
+          "diagnosisCodeableConcept": {
+            "coding": [
+              {
+                "code": "654456"
+              }
+            ]
+          }
+        }
+      ],
+      "insurance": [
+        {
+          "sequence": 1,
+          "focal": true,
+          "coverage": {
+            "reference": "Coverage/9876B1"
+          }
+        }
+      ],
+      "item": [
+        {
+          "sequence": 1,
+          "careTeamLinkId": [
+            1
+          ],
+          "service": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ex-serviceproduct",
+                "code": "exam"
+              }
+            ]
+          },
+          "servicedDate": "2021-09-16",
+          "unitPrice": {
+            "value": 425,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "net": {
+            "value": 425,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "encounter": [
+            {
+              "reference": "Encounter/example"
+            }
+          ]
+        }
+      ],
+      "total": {
+        "value": 425,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      }
+    },
+    {
+      "resourceType": "Claim",
+      "id": "960155",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the Claim</div>"
+      },
+      "identifier": [
+        {
+          "system": "http://happyhospital.com/claim",
+          "value": "9612345"
+        }
+      ],
+      "status": "active",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ex-claimtype",
+            "code": "institutional"
+          }
+        ]
+      },
+      "subType": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ex-claimsubtype",
+              "code": "emergency"
+            }
+          ]
+        }
+      ],
+      "use": "complete",
+      "patient": {
+        "reference": "Patient/6"
+      },
+      "created": "2021-08-16",
+      "enterer": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities/HOSP6234/users",
+          "value": "UC6234"
+        }
+      },
+      "insurer": {
+        "reference": "Organization/2"
+      },
+      "organization": {
+        "reference": "Organization/1"
+      },
+      "priority": {
+        "coding": [
+          {
+            "code": "normal"
+          }
+        ]
+      },
+      "payee": {
+        "type": {
+          "coding": [
+            {
+              "code": "provider"
+            }
+          ]
+        }
+      },
+      "facility": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities",
+          "value": "HOSP1234"
+        }
+      },
+      "careTeam": [
+        {
+          "sequence": 1,
+          "provider": {
+            "reference": "Practitioner/example"
+          }
+        }
+      ],
+      "diagnosis": [
+        {
+          "sequence": 1,
+          "diagnosisCodeableConcept": {
+            "coding": [
+              {
+                "code": "654456"
+              }
+            ]
+          }
+        }
+      ],
+      "insurance": [
+        {
+          "sequence": 1,
+          "focal": true,
+          "coverage": {
+            "reference": "Coverage/9876B1"
+          }
+        }
+      ],
+      "item": [
+        {
+          "sequence": 1,
+          "careTeamLinkId": [
+            1
+          ],
+          "service": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ex-serviceproduct",
+                "code": "exam"
+              }
+            ]
+          },
+          "servicedDate": "2021-09-19",
+          "unitPrice": {
+            "value": 525,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "net": {
+            "value": 525,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "encounter": [
+            {
+              "reference": "Encounter/example"
+            }
+          ]
+        }
+      ],
+      "total": {
+        "value": 525,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      }
+    },
+    {
+      "resourceType": "Claim",
+      "id": "960156",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the Claim</div>"
+      },
+      "identifier": [
+        {
+          "system": "http://happyhospital.com/claim",
+          "value": "9612346"
+        }
+      ],
+      "status": "active",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ex-claimtype",
+            "code": "institutional"
+          }
+        ]
+      },
+      "subType": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ex-claimsubtype",
+              "code": "emergency"
+            }
+          ]
+        }
+      ],
+      "use": "complete",
+      "patient": {
+        "reference": "Patient/7"
+      },
+      "created": "2021-10-16",
+      "enterer": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities/HOSP7234/users",
+          "value": "UC7234"
+        }
+      },
+      "insurer": {
+        "reference": "Organization/2"
+      },
+      "organization": {
+        "reference": "Organization/1"
+      },
+      "priority": {
+        "coding": [
+          {
+            "code": "normal"
+          }
+        ]
+      },
+      "payee": {
+        "type": {
+          "coding": [
+            {
+              "code": "provider"
+            }
+          ]
+        }
+      },
+      "facility": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities",
+          "value": "HOSP1234"
+        }
+      },
+      "careTeam": [
+        {
+          "sequence": 1,
+          "provider": {
+            "reference": "Practitioner/example"
+          }
+        }
+      ],
+      "diagnosis": [
+        {
+          "sequence": 1,
+          "diagnosisCodeableConcept": {
+            "coding": [
+              {
+                "code": "654456"
+              }
+            ]
+          }
+        }
+      ],
+      "insurance": [
+        {
+          "sequence": 1,
+          "focal": true,
+          "coverage": {
+            "reference": "Coverage/9876B1"
+          }
+        }
+      ],
+      "item": [
+        {
+          "sequence": 1,
+          "careTeamLinkId": [
+            1
+          ],
+          "service": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ex-serviceproduct",
+                "code": "exam"
+              }
+            ]
+          },
+          "servicedDate": "2021-09-11",
+          "unitPrice": {
+            "value": 625,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "net": {
+            "value": 625,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "encounter": [
+            {
+              "reference": "Encounter/example"
+            }
+          ]
+        }
+      ],
+      "total": {
+        "value": 625,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      }
+    },
+    {
+      "resourceType": "Claim",
+      "id": "960157",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the Claim</div>"
+      },
+      "identifier": [
+        {
+          "system": "http://happyhospital7.com/claim7 I am ",
+          "value": "9612347"
+        }
+      ],
+      "status": "active",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ex-claimtype",
+            "code": "institutional"
+          }
+        ]
+      },
+      "subType": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ex-claimsubtype",
+              "code": "emergency"
+            }
+          ]
+        }
+      ],
+      "use": "complete",
+      "patient": {
+        "reference": "Patient/8"
+      },
+      "created": "2021-08-26",
+      "enterer": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities/HOSP8234/users",
+          "value": "UC8234"
+        }
+      },
+      "insurer": {
+        "reference": "Organization/2"
+      },
+      "organization": {
+        "reference": "Organization/1"
+      },
+      "priority": {
+        "coding": [
+          {
+            "code": "normal"
+          }
+        ]
+      },
+      "payee": {
+        "type": {
+          "coding": [
+            {
+              "code": "provider"
+            }
+          ]
+        }
+      },
+      "facility": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities",
+          "value": "HOSP1234"
+        }
+      },
+      "careTeam": [
+        {
+          "sequence": 1,
+          "provider": {
+            "reference": "Practitioner/example"
+          }
+        }
+      ],
+      "diagnosis": [
+        {
+          "sequence": 1,
+          "diagnosisCodeableConcept": {
+            "coding": [
+              {
+                "code": "654456"
+              }
+            ]
+          }
+        }
+      ],
+      "insurance": [
+        {
+          "sequence": 1,
+          "focal": true,
+          "coverage": {
+            "reference": "Coverage/9876B1"
+          }
+        }
+      ],
+      "item": [
+        {
+          "sequence": 1,
+          "careTeamLinkId": [
+            1
+          ],
+          "service": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ex-serviceproduct",
+                "code": "exam"
+              }
+            ]
+          },
+          "servicedDate": "2021-09-16",
+          "unitPrice": {
+            "value": 725,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "net": {
+            "value": 725,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "encounter": [
+            {
+              "reference": "Encounter/example"
+            }
+          ]
+        }
+      ],
+      "total": {
+        "value": 725,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      }
+    },
+    {
+      "resourceType": "Claim",
+      "id": "960158",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the Claim</div>"
+      },
+      "identifier": [
+        {
+          "system": "http://happyhospital.com/claim",
+          "value": "9612348"
+        }
+      ],
+      "status": "active",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ex-claimtype",
+            "code": "institutional"
+          }
+        ]
+      },
+      "subType": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ex-claimsubtype",
+              "code": "emergency"
+            }
+          ]
+        }
+      ],
+      "use": "complete",
+      "patient": {
+        "reference": "Patient/9"
+      },
+      "created": "2021-08-26",
+      "enterer": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities/HOSP9234/users",
+          "value": "UC9234"
+        }
+      },
+      "insurer": {
+        "reference": "Organization/2"
+      },
+      "organization": {
+        "reference": "Organization/1"
+      },
+      "priority": {
+        "coding": [
+          {
+            "code": "normal"
+          }
+        ]
+      },
+      "payee": {
+        "type": {
+          "coding": [
+            {
+              "code": "provider"
+            }
+          ]
+        }
+      },
+      "facility": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities",
+          "value": "HOSP1234"
+        }
+      },
+      "careTeam": [
+        {
+          "sequence": 1,
+          "provider": {
+            "reference": "Practitioner/example"
+          }
+        }
+      ],
+      "diagnosis": [
+        {
+          "sequence": 1,
+          "diagnosisCodeableConcept": {
+            "coding": [
+              {
+                "code": "654456"
+              }
+            ]
+          }
+        }
+      ],
+      "insurance": [
+        {
+          "sequence": 1,
+          "focal": true,
+          "coverage": {
+            "reference": "Coverage/9876B1"
+          }
+        }
+      ],
+      "item": [
+        {
+          "sequence": 1,
+          "careTeamLinkId": [
+            1
+          ],
+          "service": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ex-serviceproduct",
+                "code": "exam"
+              }
+            ]
+          },
+          "servicedDate": "2021-08-16",
+          "unitPrice": {
+            "value": 825,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "net": {
+            "value": 825,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "encounter": [
+            {
+              "reference": "Encounter/example"
+            }
+          ]
+        }
+      ],
+      "total": {
+        "value": 825,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      }
+    },
+    {
+      "resourceType": "Claim",
+      "id": "960159",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the Claim</div>"
+      },
+      "identifier": [
+        {
+          "system": "http://happyhospital.com/claim",
+          "value": "9612349"
+        }
+      ],
+      "status": "active",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ex-claimtype",
+            "code": "institutional"
+          }
+        ]
+      },
+      "subType": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ex-claimsubtype",
+              "code": "emergency"
+            }
+          ]
+        }
+      ],
+      "use": "complete",
+      "patient": {
+        "reference": "Patient/10"
+      },
+      "created": "2021-09-06",
+      "enterer": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities/HOSP1234/users",
+          "value": "UC10234"
+        }
+      },
+      "insurer": {
+        "reference": "Organization/2"
+      },
+      "organization": {
+        "reference": "Organization/1"
+      },
+      "priority": {
+        "coding": [
+          {
+            "code": "normal"
+          }
+        ]
+      },
+      "payee": {
+        "type": {
+          "coding": [
+            {
+              "code": "provider"
+            }
+          ]
+        }
+      },
+      "facility": {
+        "identifier": {
+          "system": "http://jurisdiction.org/facilities",
+          "value": "HOSP1234"
+        }
+      },
+      "careTeam": [
+        {
+          "sequence": 1,
+          "provider": {
+            "reference": "Practitioner/example"
+          }
+        }
+      ],
+      "diagnosis": [
+        {
+          "sequence": 1,
+          "diagnosisCodeableConcept": {
+            "coding": [
+              {
+                "code": "654456"
+              }
+            ]
+          }
+        }
+      ],
+      "insurance": [
+        {
+          "sequence": 1,
+          "focal": true,
+          "coverage": {
+            "reference": "Coverage/9876B1"
+          }
+        }
+      ],
+      "item": [
+        {
+          "sequence": 1,
+          "careTeamLinkId": [
+            1
+          ],
+          "service": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ex-serviceproduct",
+                "code": "exam"
+              }
+            ]
+          },
+          "servicedDate": "2012-09-22",
+          "unitPrice": {
+            "value": 925,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "net": {
+            "value": 925,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "encounter": [
+            {
+              "reference": "Encounter/example"
+            }
+          ]
+        }
+      ],
+      "total": {
+        "value": 925,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      }
+    }
+  ]
+}
